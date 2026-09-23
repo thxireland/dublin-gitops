@@ -73,7 +73,7 @@ controls:
 ###########################################################
 software:
   fleet_maintained_apps:
-    - slug: awws-vpn-client/darwin
+    - slug: aws-vpn-client/darwin
       self_service: true
   packages:
     - path: ../platforms/windows/software/warp/cloudflare-warp.yml
