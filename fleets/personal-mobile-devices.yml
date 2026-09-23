@@ -76,7 +76,7 @@ software:
     - slug: awws-vpn-client/darwin
       self_service: true
   packages:
-    - path: ../platforms/windows/software/cloudflare-warp.yml
+    - path: ../platforms/windows/software/warp/cloudflare-warp.yml
       self_service: false
   app_store_apps:
     ###########################################################
