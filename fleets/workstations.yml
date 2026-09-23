@@ -16,6 +16,8 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 name: "💻 Workstations"
 controls:
+  enable_disk_encryption: true
+  enable_recovery_lock_password: true
   setup_experience:
     ###########################################################
     # Configure the macOS setup experience
@@ -69,10 +71,15 @@ controls:
     configuration_profiles:
       - paths: ../platforms/macos/declaration-profiles/*.json
       - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
+      - paths: ../declaration_profiles/macos27-deferral.json
+        labels_exclude_any:
+          - MacOS 27 Testers
   windows_settings:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
-
+  ipados_updates:
+    deadline: "2026-09-30"
+    minimum_version: "26.5"
   ###########################################################
   # Managed disk encryption
   #

@@ -1,0 +1,11 @@
+- name: Uptime Over 40 Days
+  platform: darwin
+  description: Hosts over 40 days uptime
+  query: "SELECT 1 FROM uptime WHERE days > 30"
+  label_membership_type: dynamic
+
+- name: MacOS 27 Testers
+  platform: darwin
+  description: Hosts for MacOS 27 Testing
+  label_membership_type: manual
+  hosts: []
